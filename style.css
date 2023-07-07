@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 5px 8px rgb(0, 0, 0, 0.03);
+    padding: 20px;
+}
+
+.form__heading {
+    text-align: center;
+}
+
+.form__heading h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.form__heading p {
+    font-size: 16px;
+    color: #525252;
+    margin: 20px 0;
+}
+
+.form__body {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form__body .form-group {
+    margin-bottom: 16px;
+}
+
+.form__body label {
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.form__body input:focus {
+    border-color: #17B0B3;
+    outline: none;
+    box-shadow: 2px 2px rgb(170, 230, 193, 0.8);
+}
+
+.form__body input[type="radio"]:focus,
+.form__body input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form__body input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.form__body input[type="radio"],
+.form__body input[type="checkbox"] {
+    border: none;
+    width: 16px;
+    cursor: pointer;
+}
+
+.form__body select {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.form__body .form-message {
+    font-size: 12px;
+    color: #FF0018;
+}
+
+.form__footer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form__footer .form-submit:hover {
+    opacity: 0.8;
+}
+
+.form__footer .form-submit {
+    background-color: #17B0B3;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group.invalid input,
+.form-group.invalid input:focus,
+.form-group.invalid select {
+    border-color: #FF0018;
+    box-shadow: 2px 2px rgb(255, 0, 24, 0.2);
+}
